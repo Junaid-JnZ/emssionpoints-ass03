@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity5">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#4D2C29"
+        tools:context=".MainActivity2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-40dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="262dp"
+            android:layout_height="34dp"
+            android:layout_marginTop="28dp"
+            android:text="Quiz Marks Details"
+            android:textAlignment="center"
+            android:textColor="#D1A38A"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.503"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading"
+            tools:text="Quiz Marks Details" />
+
+        <TextView
+            android:id="@+id/totalAttempted"
+            android:layout_width="341dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="12dp"
+            android:text="Total Attempted: "
+            android:textAlignment="center"
+            android:textColor="#D1A38A"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/progressBar"
+            tools:text="Total Attempted: " />
+
+        <TextView
+            android:id="@+id/totalCorrect"
+            android:layout_width="341dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="16dp"
+            android:text="Total Correct:"
+            android:textAlignment="center"
+            android:textColor="#D1A38A"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalAttempted"
+            tools:text="Total Correct: " />
+
+        <TextView
+            android:id="@+id/totalWrong"
+            android:layout_width="341dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="8dp"
+            android:text="Total Wrong:"
+            android:textAlignment="center"
+            android:textColor="#D1A38A"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalCorrect"
+            tools:text="Total Wrong: " />
+
+        <TextView
+            android:id="@+id/percentage"
+            android:layout_width="341dp"
+            android:layout_height="29dp"
+            android:layout_marginTop="12dp"
+            android:text="Percentage:"
+            android:textAlignment="center"
+            android:textColor="#D1A38A"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/totalWrong"
+            tools:text="Percentage:" />
+
+        <TextView
+            android:id="@+id/heading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:fontFamily="sans-serif"
+            android:text="مخارج الحروف"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+            android:textColor="#D1A38A"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/heading3" />
+
+        <TextView
+            android:id="@+id/heading3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="56dp"
+            android:background="#00F8F7F7"
+            android:backgroundTint="#F8F3F3"
+            android:fontFamily="sans-serif-black"
+            android:text="Makhārij Al-Hurūf"
+            android:textColor="#D1A38A"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.563"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Makhārij Al-Hurūf" />
+
+        <Button
+            android:id="@+id/shareBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="14dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#B5754A"
+            android:fontFamily="monospace"
+            android:text="Share Result"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/percentage" />
+
+        <Button
+            android:id="@+id/gotoHomeBtn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="24dp"
+            android:backgroundTint="#B5754A"
+            android:fontFamily="monospace"
+            android:text="Goto Home Screen"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/shareBtn" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="139dp"
+            android:layout_height="122dp"
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <TextView
+        android:id="@+id/heading9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="56dp"
+        android:background="#00F8F7F7"
+        android:backgroundTint="#F8F3F3"
+        android:fontFamily="sans-serif-black"
+        android:text="Makhārij Al-Hurūf"
+        android:textColor="#D1A38A"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.563"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Makhārij Al-Hurūf" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
